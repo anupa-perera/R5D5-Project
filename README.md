@@ -10,9 +10,9 @@ we will also implementing a database to store the data used by the machine learn
 
 In conclusion,This project will provide valuable insights into the salaries of NBA players and help users understand how different factors impact salary predictions.In general use this application will help to simplify the negotiation process between player agents and club managers to increase the economical gain for both the parties.
 
-Team members:
-      name1
-      K.M.Sasiru Vishmika Perera    w1899317  20211267
-      name2
-      name3
-      name4
+<b>Team members:<b/><br/><br/>
+      name1<br/><br/>
+      K.M.Sasiru Vishmika Perera    &nbsp;&nbsp;&nbsp; w1899317  &nbsp;&nbsp;&nbsp; 20211267<br/><br/>
+      name2<br/><br/>
+      name3<br/><br/>
+      name4<br/><br/>
