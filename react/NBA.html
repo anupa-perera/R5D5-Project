@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NBA Player Value Prediction System</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to NBA Player Value Prediction System</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Our Team</a>
+        <form>
+          <input type="text" placeholder="Search for a team">
+        </form>
+      </nav>
+    </header>
+    <section id="teams">
+      <div class="teams-header">
+        <h2>NBA Clubs</h2>
+      </div>
+      <div class="team-logos">
+        <div class="team-logo">
+          <img src="https://via.placeholder.com/100x100" alt="Team Logo">
+          <div class="team-name">Team 1</div>
+        </div>
+        <div class="team-logo">
+          <img src="https://via.placeholder.com/100x100" alt="Team Logo">
+          <div class="team-name">Team 2</div>
+        </div>
+        <div class="team-logo">
+          <img src="https://via.placeholder.com/100x100" alt="Team Logo">
+          <div class="team-name">Team 3</div>
+        </div>
+        <div class="team-logo">
+          <img src="https://via.placeholder.com/100x100" alt="Team Logo">
+          <div class="team-name">Team 4</div>
+        </div>
+      </div>
+    </section>
+    <section id="players">
+      <div class="popular-players-header">
+        <h2>Most Popular Players</h2>
+      </div>
+      <div class="popular-players">
+        <div class="player-img">
+          <img src="https://via.placeholder.com/300x400" alt="Player Image">
+          <div class="player-info">
+            <h3>Player 1</h3>
+            <p>Some player information</p>
+          </div>
+        </div>
+        <div class="player-img">
+          <img src="https://via.placeholder.com/300x400" alt="Player Image">
+          <div class="player-info">
+            <h3>Player 2</h3>
+            <p>Some player information</p>
+          </div>
+        </div>
+        <div class="player-img">
+          <img src="https://via.placeholder.com/300x400" alt="Player Image">
+          <div class="player-info">
+            <h3>Player 3</h3>
+            <p>Some player information</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+        const playerImg = document.querySelectorAll('.player-img');
+        
+        playerImg.forEach(img => {
+          img.addEventListener('mouseover', function() {
+            this.querySelector('.player-info').style.display = 'block';
+          });
+          
+          img.addEventListener('mouseout', function() {
+            this.querySelector('.player-info').style.display = 'none';
+          });
+        });
+      </script>
+        </body>
+      </html>
