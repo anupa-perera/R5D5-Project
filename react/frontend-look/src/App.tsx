@@ -1,5 +1,6 @@
 import logo from './assets/logo.svg';
 import styles from './App.module.scss';
+import { Footer } from './components/footer/footer';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     Learn React
                 </a>
             </header>
+            <Footer />
         </div>
     );
 }
