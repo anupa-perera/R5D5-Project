@@ -5,7 +5,7 @@ export default createBoard({
     name: 'Footer',
     Board: () => <Footer />,
     environmentProps: {
-        canvasWidth: 848,
+        canvasWidth: 1140,
         canvasHeight: 5,
     },
 });

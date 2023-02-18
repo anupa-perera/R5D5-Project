@@ -5,8 +5,9 @@ export default createBoard({
     name: 'MeetTheTeam',
     Board: () => <MeetTheTeam />,
     environmentProps: {
-        canvasWidth: 788,
+        canvasWidth: 1101,
         canvasHeight: 2025,
-        windowWidth: 1030,
+        windowWidth: 1062,
+        windowHeight: 714,
     },
 });

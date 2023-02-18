@@ -2,6 +2,10 @@
   margin: 0;
   background-color: #f5f5f5;
 }
+.all-content{
+  min-height: calc(100% - 20px);
+  height: auto;
+}
 .meettheteamimage {
   width: 100%;
   margin-bottom: 50px;
