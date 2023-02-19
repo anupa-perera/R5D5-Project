@@ -2,7 +2,8 @@ import styles from './meet-the-team.module.scss';
 import classNames from 'classnames';
 import { Footer } from '../../components/footer/footer';
 import sasiru from './images/sasiru-dp.png';
-// import code from 'code.jpeg';
+import header from './images/header.jpg';
+import malith from './images/Malith.jpg';
 
 export interface MeetTheTeamProps {
     className?: string;
@@ -19,11 +20,15 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
             <div className="all-content">
                 <div className={styles.header}>
                     <img
-                        src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                        src={header}
                         className={styles.meettheteamimage}
                     />
                     <h1 className={styles['header-text']}>Meet the Team</h1>
                 </div>
+                <br />
+                <br />
+                <br />
+                <br />
                 <div className={styles.area}>
                     <div className={classNames('team', styles.team)}>
                         <div className={classNames('member', styles.member)}>
@@ -41,7 +46,7 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                             </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
-                            <img src="https://picsum.photos/150/150" alt="Member photo Malith" />
+                            <img src={malith} alt="Member photo Malith" />
                             <h3>Bob Johnson</h3>
                             <p>Software Developer</p>
                         </div>
@@ -59,11 +64,17 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                 </div>
                 <div className={styles['after-statement']}>
                     <p className="afterstatement-text">
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                         <i>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit
                             varius felis, quis faucibus dolor hendrerit vel. Pellentesque aliquet
                             elit elit, ut gravida justo rhoncus in.
                         </i>
+                        <br />
+                        <br />
                         <br />
                         <br />
                     </p>
