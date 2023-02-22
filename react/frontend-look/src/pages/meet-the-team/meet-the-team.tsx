@@ -4,6 +4,7 @@ import { Footer } from '../../components/footer/footer';
 import sasiru from './images/sasiru-dp.png';
 import header from './images/header.jpg';
 import malith from './images/Malith.jpg';
+import dulara from './images/dulara.jpg';
 
 export interface MeetTheTeamProps {
     className?: string;
@@ -51,9 +52,12 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                             <p>Software Developer</p>
                         </div>
                         <div className={classNames('member', styles.member)}>
-                            <img src="https://picsum.photos/150/150" alt="Member photo Dulara" />
-                            <h3>Alice Brown</h3>
-                            <p>Software Developer</p>
+                            <img src={dulara} alt="Member photo Dulara" />
+                            <h3>Dulara Chathuska</h3>
+                            <p>Software Developer
+                            <br/>
+                               w1912934
+                            </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src="https://picsum.photos/150/150" alt="Member photo Mojitha" />
