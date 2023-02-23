@@ -29,4 +29,19 @@ code {
 .image3 {
   width: 300px;
   height: 350px;
+  text-align: center;
+  background-color: white;
+}
+.pop-players {
+  text-align: center;
+  border: 1px solid #4d4d4d;
+  box-shadow: 2.83px 2.83px 2px #808080;
+}
+.footer {
+}
+.h-plyer1 {
+}
+.home-players {
+  width: 400px;
+  height: 400px;
 }
