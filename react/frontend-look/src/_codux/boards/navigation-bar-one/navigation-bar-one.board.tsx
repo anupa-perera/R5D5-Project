@@ -3,5 +3,9 @@ import { NavigationBarOne } from '../../../components/navigation-bar-one/navigat
 
 export default createBoard({
     name: 'NavigationBarOne',
-    Board: () => <NavigationBarOne />
+    Board: () => <NavigationBarOne />,
+    environmentProps: {
+        canvasWidth: 1050,
+        canvasHeight: 180,
+    },
 });
