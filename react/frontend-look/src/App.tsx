@@ -1,25 +1,23 @@
-import logo from './assets/logo.svg';
-import styles from './App.module.scss';
+// import styles from './App.module.scss';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { MeetTheTeam } from './pages/meet-the-team/meet-the-team';
+import { Home } from './pages/home/home';
+import { Clubpage } from './pages/clubpage/clubpage';
+import { NavigationBarOne } from './components/navigation-bar-one/navigation-bar-one';
 import { Footer } from './components/footer/footer';
 
 function App() {
     return (
-        <div className={styles.App}>
-            <header className={styles['App-header']}>
-                <img src={logo} className={styles['App-logo']} alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className={styles['App-link']}
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-            <Footer />
+        <div>
+            <BrowserRouter> 
+                <NavigationBarOne />
+                <Routes>
+                    <Route path="/about" element={<MeetTheTeam />} />
+                    <Route path="/clubpage" element={<Clubpage />} />
+                    <Route path="/" element={<Home />} />
+                </Routes> 
+                <Footer />
+            </BrowserRouter>   
         </div>
     );
 }

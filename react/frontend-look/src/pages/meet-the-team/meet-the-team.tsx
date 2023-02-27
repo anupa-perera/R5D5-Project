@@ -4,7 +4,9 @@ import { Footer } from '../../components/footer/footer';
 import sasiru from './images/sasiru-dp.png';
 import header from './images/header.jpg';
 import malith from './images/Malith.jpg';
+// import anupa from './images/Anupa.PNG.png';
 import dulara from './images/dulara.jpg';
+import { NavigationBarOne } from '../../components/navigation-bar-one/navigation-bar-one';
 
 export interface MeetTheTeamProps {
     className?: string;
@@ -20,10 +22,7 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
         <div className={classNames(styles.root, className)}>
             <div className="all-content">
                 <div className={styles.header}>
-                    <img
-                        src={header}
-                        className={styles.meettheteamimage}
-                    />
+                    <img src={header} className={styles.meettheteamimage} />
                     <h1 className={styles['header-text']}>Meet the Team</h1>
                 </div>
                 <br />
@@ -33,9 +32,12 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                 <div className={styles.area}>
                     <div className={classNames('team', styles.team)}>
                         <div className={classNames('member', styles.member)}>
-                            <img src="https://picsum.photos/150/150" alt="Member photo Anupa" />
-                            <h3>John Doe</h3>
-                            <p>Software Developer</p>
+                            <img src={""} alt="Member photo Anupa" />
+                            <h3>Anupa Perera</h3>
+                            <p>Software Developer
+                            <br />
+                                w------
+                            </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src={sasiru} alt="Member photo Sasiru" />
@@ -48,20 +50,21 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src={malith} alt="Member photo Malith" />
-                            <h3>Bob Johnson</h3>
+                            <h3>Malith alexander</h3>
                             <p>Software Developer</p>
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src={dulara} alt="Member photo Dulara" />
                             <h3>Dulara Chathuska</h3>
-                            <p>Software Developer
-                            <br/>
-                               w1912934
+                            <p>
+                                Software Developer
+                                <br />
+                                w1912934
                             </p>
                         </div>
                         <div className={classNames('member', styles.member)}>
                             <img src="https://picsum.photos/150/150" alt="Member photo Mojitha" />
-                            <h3>Mike Davis</h3>
+                            <h3>Mojitha Gunaratne</h3>
                             <p>Software Developer</p>
                         </div>
                     </div>
@@ -84,7 +87,6 @@ export const MeetTheTeam = ({ className, children = 'MeetTheTeam' }: MeetTheTeam
                     </p>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

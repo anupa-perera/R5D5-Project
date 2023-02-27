@@ -1,10 +1,18 @@
-import { createBoard } from '@wixc3/react-board';
-import { Footer } from '../../components/footer/footer';
+import styles from './home.module.scss';
+import classNames from 'classnames';
 
-export default createBoard({
-    name: 'home-pg',
-    Board: () => (
-        <div>
+export interface HomeProps {
+    className?: string;
+    children?: React.ReactNode;
+}
+
+/**
+ * This component was generated using Codux's built-in Default new component template.
+ * For details on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-homes-and-templates
+ */
+export const Home = ({ className, children = 'Home' }: HomeProps) => {
+    return (
+    <div className={classNames(styles.root, className)}>{"This is "+children}
             <h2 className="topic">
                 NBA Clubs
                 <b />
@@ -49,15 +57,7 @@ export default createBoard({
             />
             <img
                 src="https://ca-times.brightspotcdn.com/dims4/default/b6c85ed/2147483647/strip/false/crop/3840x2160+0+0/resize/1486x836!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F72%2Ff8%2F1aa9f1be432086e01741fdd93230%2Fnets-basketball-11370.jpg"
-                className="home-players"
-            />
-            <Footer className="footer" />
-        </div>
-    ),
-    environmentProps: {
-        canvasWidth: 1224,
-        windowHeight: 573,
-        windowWidth: 1370,
-        canvasHeight: 1486,
-    },
-});
+                className="home-players"/>
+
+    </div>);
+};
