@@ -24,6 +24,21 @@ export const NavigationBarOne = ({
                     </Link>
                 </li>
                 <li className={styles['navigation-item-left']}>
+                    <Link to="/clubpage" className={styles['navigation-link']}>
+                        Clubs
+                    </Link>
+                </li>
+                <li className={styles['navigation-item-left']}>
+                    <Link to="/playerpage" className={styles['navigation-link']}>
+                        Player
+                    </Link>
+                </li>
+                <li className={styles['navigation-item-left']}>
+                    <Link to="/playervalueprediction" className={styles['navigation-link']}>
+                        Player Value calculation
+                    </Link>
+                </li>
+                <li className={styles['navigation-item-left']}>
                     <Link to="/about" className={styles['navigation-link']}>
                         About
                     </Link>
