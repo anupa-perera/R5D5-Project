@@ -13,5 +13,6 @@ export interface ClubpageProps {
 export const Clubpage = ({ className, children = 'Clubpage' }: ClubpageProps) => {
     return <div className={classNames(styles.root, className)}>
         {"This is "+children}
+        <br/> This page will have a list of clubs usining tiles 
         </div>;
 };
