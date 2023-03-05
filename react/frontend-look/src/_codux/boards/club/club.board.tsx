@@ -3,5 +3,9 @@ import { Club } from '../../../pages/club/club';
 
 export default createBoard({
     name: 'Club',
-    Board: () => <Club />
+    Board: () => <Club />,
+    environmentProps: {
+        canvasWidth: 1184,
+        canvasHeight: 677,
+    },
 });

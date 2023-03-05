@@ -11,8 +11,7 @@ export interface ClubpageProps {
  * For details on how to create custom new component templates, see https://help.codux.com/kb/en/article/configuration-for-clubpages-and-templates
  */
 export const Clubpage = ({ className, children = 'Clubpage' }: ClubpageProps) => {
-    return <div className={classNames(styles.root, className)}>
-        {"This is "+children}
-        <br/> This page will have a list of clubs usining tiles 
-        </div>;
+    return (<div className={classNames(styles.container, className)}>
+                
+            </div>);
 };
