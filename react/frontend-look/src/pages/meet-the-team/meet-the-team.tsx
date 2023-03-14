@@ -1,12 +1,10 @@
 import styles from './meet-the-team.module.scss';
 import classNames from 'classnames';
-import { Footer } from '../../components/footer/footer';
 import sasiru from './images/sasiru-dp.png';
 import header from './images/header.jpg';
 import malith from './images/Malith.jpg';
 // import anupa from './images/Anupa.PNG.png';
 import dulara from './images/dulara.jpg';
-import { NavigationBarOne } from '../../components/navigation-bar-one/navigation-bar-one';
 
 export interface MeetTheTeamProps {
     className?: string;
