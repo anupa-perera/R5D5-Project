@@ -12,9 +12,19 @@ client.connect();
 
 app.get("/",async(req,res)=>{
     const database = client.db('NBA_DB');
-    const NBATeamtable =  database.collection('NBA Teams');
+    const NBATeamtable =  database.collection('NBA_Teams');
     const results = await NBATeamtable.find({}).toArray();
     res.json({nbaresults:results})
 });
+
+app.get('/clubs/:clubname',async(req,res)=>{    
+    console.log(req.params.clubname);
+    const database = client.db('NBA_DB');
+    const NBATeamtable =  database.collection('NBA_Player_Info');
+    const results = await NBATeamtable.find({"team":`${req.params.clubname}`}).toArray();
+    res.json({players:results})
+});
+
+
 
 app.listen(8080,console.log("Listning to port 8080"));
