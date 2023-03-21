@@ -6,8 +6,8 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
-
+import clubplayers from './clubplayers.css';
+import pageheader from './../../assets/images/playerpage.jpg';
 
 export default function Clubplayers({club}) {
 
@@ -29,7 +29,9 @@ export default function Clubplayers({club}) {
 
   return (
     <div>
-
+      <div className='header'>
+            <img src={pageheader} className='main-header-image'/>
+      </div>
     <h3>List of Players in {club} Club</h3>
 
    <Box sx={{display:'flex',flexWrap:'wrap',justifyContent:'center',gap:'0.5rem'}}>

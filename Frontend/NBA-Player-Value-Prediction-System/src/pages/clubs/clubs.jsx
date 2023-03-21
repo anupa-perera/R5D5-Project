@@ -8,7 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import pageheader from '../../assets/images/clubpage.jpg'
 
 export default function Club({setClub}){
 
@@ -27,8 +27,12 @@ export default function Club({setClub}){
 
 
     return (
+      <React.Fragment>
+        <div className='header'>
+            <img src={pageheader} className='main-header-image'/>
+        </div>
         <div className='clubs'>
-           <h1>Here Are The NBA Clubs</h1>
+        <h3>Explore NBA Clubs</h3>
 
           <Box sx={{display:'flex',flexWrap:'wrap',justifyContent:'center',gap:'0.5rem'}}>
            {teams.map((team) => {
@@ -49,6 +53,7 @@ export default function Club({setClub}){
            })}
           </Box> 
         </div>
+      </React.Fragment>
     );
 };
 
