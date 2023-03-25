@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -6,12 +7,12 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import clubplayers from './clubplayers.css';
 import pageheader from './../../assets/images/playerpage.jpg';
 
-export default function Clubplayers({club}) {
+export default function Clubplayers({club,setPlayer}) {
 
     
+
     const [players, setPlayers] = useState([]);
 
     useEffect(() => {
@@ -44,7 +45,9 @@ export default function Clubplayers({club}) {
                </Typography>
              </CardContent>
              <CardActions>
-               <Button size="small">Details</Button>
+                <Link to="/clubpage/clubplayers/oneplayer" onClick={()=>{setPlayer(player.full_name)}}>
+                  <Button size="small">Details</Button>
+                </Link>
              </CardActions>
          </Card>
          );
