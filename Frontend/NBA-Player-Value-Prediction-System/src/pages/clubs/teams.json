@@ -1,0 +1,242 @@
+[
+  {
+    "ID": 1,
+    "TeamName": "Atlanta Hawks",
+    "ArenaName": "State Farm Arena",
+    "ArenaLocation": "Atlanta, Georgia",
+    "SeatingCapacity": 18118,
+    "OpeningYear": 1999
+  },
+ {
+    "ID": 2,
+    "TeamName": "Boston Celtics",
+    "ArenaName": "TD Garden",
+    "ArenaLocation": "Boston, Massachusetts",
+    "SeatingCapacity": 18624,
+    "OpeningYear": 1995
+  },
+  {
+    "ID": 3,
+    "TeamName": "Brooklyn Nets",
+    "ArenaName": "Barclays Center",
+    "ArenaLocation": "Brooklyn, New York",
+    "SeatingCapacity": 17732,
+    "OpeningYear": 2012
+  },
+  {
+    "ID": 4,
+    "TeamName": "Charlotte Hornets",
+    "ArenaName": "Spectrum Center",
+    "ArenaLocation": "Charlotte, North Carolina",
+    "SeatingCapacity": 19077,
+    "OpeningYear": 2005
+  },
+  {
+    "ID": 5,
+    "TeamName": "Chicago Bulls",
+    "ArenaName": "United Center",
+    "ArenaLocation": "Chicago, Illinois",
+    "SeatingCapacity": 20917,
+    "OpeningYear": 1994
+  },
+  {
+    "ID": 6,
+    "TeamName": "Cleveland Cavaliers",
+    "ArenaName": "Rocket Mortgage Fieldhouse",
+    "ArenaLocation": "Cleveland, Ohio",
+    "SeatingCapacity": 19432,
+    "OpeningYear": 1994
+  },
+  {
+    "ID": 7,
+    "TeamName": "Dallas Mavericks",
+    "ArenaName": "American Airlines Center",
+    "ArenaLocation": "Dallas, Texas",
+    "SeatingCapacity": 19200,
+    "OpeningYear": 2001
+  },
+  {
+    "ID": 8,
+    "TeamName": "Denver Nuggets",
+    "ArenaName": "Pepsi Center",
+    "ArenaLocation": "Denver, Colorado",
+    "SeatingCapacity": 19520,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 9,
+    "TeamName": "Detroit Pistons",
+    "ArenaName": "Little Caesars Arena",
+    "ArenaLocation": "Detroit, Michigan",
+    "SeatingCapacity": 20491,
+    "OpeningYear": 2017
+  },
+  {
+    "ID": 10,
+    "TeamName": "Golden State Warriors",
+    "ArenaName": "Chase Center",
+    "ArenaLocation": "San Francisco, California",
+    "SeatingCapacity": 18064,
+    "OpeningYear": 2019
+  },
+  {
+    "ID": 11,
+    "TeamName": "Houston Rockets",
+    "ArenaName": "Toyota Center",
+    "ArenaLocation": "Houston, Texas",
+    "SeatingCapacity": 18055,
+    "OpeningYear": 2003
+  },
+  {
+    "ID": 12,
+    "TeamName": "Indiana Pacers",
+    "ArenaName": "Bankers Life Fieldhouse",
+    "ArenaLocation": "Indianapolis, Indiana",
+    "SeatingCapacity": 17923,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 13,
+    "TeamName": "Los Angeles Clippers",
+    "ArenaName": "Staples Center",
+    "ArenaLocation": "Los Angeles, California",
+    "SeatingCapacity": 19068,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 14,
+    "TeamName": "Los Angeles Lakers",
+    "ArenaName": "Staples Center",
+    "ArenaLocation": "Los Angeles, California",
+    "SeatingCapacity": 19068,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 15,
+    "TeamName": "Memphis Grizzlies",
+    "ArenaName": "FedEx Forum",
+    "ArenaLocation": "Memphis, Tennessee",
+    "SeatingCapacity": 17794,
+    "OpeningYear": 2004
+  },
+  {
+    "ID": 16,
+    "TeamName": "Miami Heat",
+    "ArenaName": "American Airlines Arena",
+    "ArenaLocation": "Miami, Florida",
+    "SeatingCapacity": 19600,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 17,
+    "TeamName": "Milwaukee Bucks",
+    "ArenaName": "Fiserv Forum",
+    "ArenaLocation": "Milwaukee, Wisconsin",
+    "SeatingCapacity": 17500,
+    "OpeningYear": 2018
+  },
+  {
+    "ID": 18,
+    "TeamName": "Minnesota Timberwolves",
+    "ArenaName": "Target Center",
+    "ArenaLocation": "Minneapolis, Minnesota",
+    "SeatingCapacity": 18978,
+    "OpeningYear": 1990
+  },
+  {
+    "ID": 19,
+    "TeamName": "New Orleans Pelicans",
+    "ArenaName": "Smoothie King Center",
+    "ArenaLocation": "New Orleans, Louisiana",
+    "SeatingCapacity": 16867,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 20,
+    "TeamName": "New York Knicks",
+    "ArenaName": "Madison Square Garden",
+    "ArenaLocation": "New York City, New York",
+    "SeatingCapacity": 19812,
+    "OpeningYear": 1968
+  },
+  {
+    "ID": 21,
+    "TeamName": "Oklahoma City Thunder",
+    "ArenaName": "Chesapeake Energy Arena",
+    "ArenaLocation": "Oklahoma City, Oklahoma",
+    "SeatingCapacity": 18203,
+    "OpeningYear": 2002
+  },
+  {
+    "ID": 22,
+    "TeamName": "Orlando Magic",
+    "ArenaName": "Amway Center",
+    "ArenaLocation": "Orlando, Florida",
+    "SeatingCapacity": 18846,
+    "OpeningYear": 2010
+  },
+  {
+    "ID": 23,
+    "TeamName": "Philadelphia 76ers",
+    "ArenaName": "Wells Fargo Center",
+    "ArenaLocation": "Philadelphia, Pennsylvania",
+    "SeatingCapacity": 20478,
+    "OpeningYear": 1996
+  },
+  {
+    "ID": 24,
+    "TeamName": "Phoenix Suns",
+    "ArenaName": "Talking Stick Resort Arena",
+    "ArenaLocation": "Phoenix, Arizona",
+    "SeatingCapacity": 18055,
+    "OpeningYear": 1992
+  },
+  {
+    "ID": 25,
+    "TeamName": "Portland Trail Blazers",
+    "ArenaName": "Moda Center",
+    "ArenaLocation": "Portland, Oregon",
+    "SeatingCapacity": 19441,
+    "OpeningYear": 1995
+  },
+  {
+    "ID": 26,
+    "TeamName": "Sacramento Kings",
+    "ArenaName": "Golden 1 Center",
+    "ArenaLocation": "Sacramento, California",
+    "SeatingCapacity": 17583,
+    "OpeningYear": 2016
+  },
+  {
+    "ID": 27,
+    "TeamName": "San Antonio Spurs",
+    "ArenaName": "AT&T Center",
+    "ArenaLocation": "San Antonio, Texas",
+    "SeatingCapacity": 18418,
+    "OpeningYear": 2002
+  },
+  {
+    "ID": 28,
+    "TeamName": "Toronto Raptors",
+    "ArenaName": "Scotiabank Arena",
+    "ArenaLocation": "Toronto, Ontario",
+    "SeatingCapacity": 19800,
+    "OpeningYear": 1999
+  },
+  {
+    "ID": 29,
+    "TeamName": "Utah Jazz",
+    "ArenaName": "Vivint Smart Home Arena",
+    "ArenaLocation": "Salt Lake City, Utah",
+    "SeatingCapacity": 18306,
+    "OpeningYear": 1991
+  },
+  {
+    "ID": 30,
+    "TeamName": "Washington Wizards",
+    "ArenaName": "Capital One Arena",
+    "ArenaLocation": "Washington, D.C.",
+    "SeatingCapacity": 20356,
+    "OpeningYear": 1997
+  }
+]
