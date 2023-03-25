@@ -1,1 +1,0 @@
-use vite to create the app use typescript
