@@ -21,4 +21,9 @@
     background-color: white;
 }
 
-.name{color: black;}
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+    margin-bottom: 9px;
+}
+

@@ -56,7 +56,7 @@ function Home(){
         <h3>Explore clubs</h3>
         <div class="carousel">
             <div class="tiles-wrapper">
-            <a href='https://www.nba.com/lakers' target='_blank'><div class="tile">Los Angeles Lakers</div></a>
+            <a  href='https://www.nba.com/lakers' target='_blank'><img src="../clubs/Logos/atlanta-hawks.png" /><div class="tile">Los Angeles Lakers</div></a>
             <a href='https://www.nba.com/nets' target='_blank'><div class="tile">Brooklyn Nets </div></a>
             <a href='https://www.nba.com/celtics' target='_blank'><div class="tile">Boston Celtics </div></a>
             <a href='https://www.nba.com/bulls' target='_blank'><div class="tile">Chicago Bulls</div></a>

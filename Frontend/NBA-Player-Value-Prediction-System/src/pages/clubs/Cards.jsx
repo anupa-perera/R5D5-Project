@@ -3,9 +3,10 @@ import React from "react"
 export default function Card(props) {
     return (
         <div className="card">
-                <h1 className='name'>{props.TeamName}</h1>
-                  <h2 >{props.arena}</h2>
-            <p className="card--title">{props.location}</p>
+                <h2 className='name'>{props.name}</h2>
+                <img src={`./Logos/${props.Logo}`} className="card--image" alt={props.name + ' Logo'} />
+                  <h3 >{props.arena}</h3>
+            <h4 className="card--title">{props.location}</h4>
         </div>
     )
 }

@@ -2,6 +2,7 @@
   {
     "ID": 1,
     "TeamName": "Atlanta Hawks",
+    "Logo": "./Logos/atlanta-hawks.png",
     "ArenaName": "State Farm Arena",
     "ArenaLocation": "Atlanta, Georgia",
     "SeatingCapacity": 18118,
@@ -10,6 +11,7 @@
  {
     "ID": 2,
     "TeamName": "Boston Celtics",
+    "Logo": "\\Logos\\boston-celtics.png",
     "ArenaName": "TD Garden",
     "ArenaLocation": "Boston, Massachusetts",
     "SeatingCapacity": 18624,
