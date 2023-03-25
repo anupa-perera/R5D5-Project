@@ -1,0 +1,11 @@
+.clubs{
+    color: black;
+}
+.header{
+    position: relative;
+}
+.main-header-image{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px;
+}
