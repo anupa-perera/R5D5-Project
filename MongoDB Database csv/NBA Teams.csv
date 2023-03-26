@@ -1,31 +1,31 @@
-﻿ID,TeamName,ArenaName,ArenaLocation,SeatingCapacity,OpeningYear
-1,Atlanta Hawks,State Farm Arena,"Atlanta, Georgia",18118,1999
-2,Boston Celtics,TD Garden,"Boston, Massachusetts",18624,1995
-3,Brooklyn Nets,Barclays Center,"Brooklyn, New York",17732,2012
-4,Charlotte Hornets,Spectrum Center,"Charlotte, North Carolina",19077,2005
-5,Chicago Bulls,United Center,"Chicago, Illinois",20917,1994
-6,Cleveland Cavaliers,Rocket Mortgage Fieldhouse,"Cleveland, Ohio",19432,1994
-7,Dallas Mavericks,American Airlines Center,"Dallas, Texas",19200,2001
-8,Denver Nuggets,Pepsi Center,"Denver, Colorado",19520,1999
-9,Detroit Pistons,Little Caesars Arena,"Detroit, Michigan",20491,2017
-10,Golden State Warriors,Chase Center,"San Francisco, California",18064,2019
-11,Houston Rockets,Toyota Center,"Houston, Texas",18055,2003
-12,Indiana Pacers,Bankers Life Fieldhouse,"Indianapolis, Indiana",17923,1999
-13,Los Angeles Clippers,Staples Center,"Los Angeles, California",19068,1999
-14,Los Angeles Lakers,Staples Center,"Los Angeles, California",19068,1999
-15,Memphis Grizzlies,FedEx Forum,"Memphis, Tennessee",17794,2004
-16,Miami Heat,American Airlines Arena,"Miami, Florida",19600,1999
-17,Milwaukee Bucks,Fiserv Forum,"Milwaukee, Wisconsin",17500,2018
-18,Minnesota Timberwolves,Target Center,"Minneapolis, Minnesota",18978,1990
-19,New Orleans Pelicans,Smoothie King Center,"New Orleans, Louisiana",16867,1999
-20,New York Knicks,Madison Square Garden,"New York City, New York",19812,1968
-21,Oklahoma City Thunder,Chesapeake Energy Arena,"Oklahoma City, Oklahoma",18203,2002
-22,Orlando Magic,Amway Center,"Orlando, Florida",18846,2010
-23,Philadelphia 76ers,Wells Fargo Center,"Philadelphia, Pennsylvania",20478,1996
-24,Phoenix Suns,Talking Stick Resort Arena,"Phoenix, Arizona",18055,1992
-25,Portland Trail Blazers,Moda Center,"Portland, Oregon",19441,1995
-26,Sacramento Kings,Golden 1 Center,"Sacramento, California",17583,2016
-27,San Antonio Spurs,AT&T Center,"San Antonio, Texas",18418,2002
-28,Toronto Raptors,Scotiabank Arena,"Toronto, Ontario",19800,1999
-29,Utah Jazz,Vivint Smart Home Arena,"Salt Lake City, Utah",18306,1991
-30,Washington Wizards,Capital One Arena,"Washington, D.C.",20356,1997
+﻿TeamName,ArenaName,ArenaLocation,SeatingCapacity,OpeningYear
+Atlanta Hawks,State Farm Arena,"Atlanta, Georgia",18118,1999
+Boston Celtics,TD Garden,"Boston, Massachusetts",18624,1995
+Brooklyn Nets,Barclays Center,"Brooklyn, New York",17732,2012
+Charlotte Hornets,Spectrum Center,"Charlotte, North Carolina",19077,2005
+Chicago Bulls,United Center,"Chicago, Illinois",20917,1994
+Cleveland Cavaliers,Rocket Mortgage Fieldhouse,"Cleveland, Ohio",19432,1994
+Dallas Mavericks,American Airlines Center,"Dallas, Texas",19200,2001
+Denver Nuggets,Pepsi Center,"Denver, Colorado",19520,1999
+Detroit Pistons,Little Caesars Arena,"Detroit, Michigan",20491,2017
+Golden State Warriors,Chase Center,"San Francisco, California",18064,2019
+Houston Rockets,Toyota Center,"Houston, Texas",18055,2003
+Indiana Pacers,Bankers Life Fieldhouse,"Indianapolis, Indiana",17923,1999
+Los Angeles Clippers,Staples Center,"Los Angeles, California",19068,1999
+Los Angeles Lakers,Staples Center,"Los Angeles, California",19068,1999
+Memphis Grizzlies,FedEx Forum,"Memphis, Tennessee",17794,2004
+Miami Heat,American Airlines Arena,"Miami, Florida",19600,1999
+Milwaukee Bucks,Fiserv Forum,"Milwaukee, Wisconsin",17500,2018
+Minnesota Timberwolves,Target Center,"Minneapolis, Minnesota",18978,1990
+New Orleans Pelicans,Smoothie King Center,"New Orleans, Louisiana",16867,1999
+New York Knicks,Madison Square Garden,"New York City, New York",19812,1968
+Oklahoma City Thunder,Chesapeake Energy Arena,"Oklahoma City, Oklahoma",18203,2002
+Orlando Magic,Amway Center,"Orlando, Florida",18846,2010
+Philadelphia 76ers,Wells Fargo Center,"Philadelphia, Pennsylvania",20478,1996
+Phoenix Suns,Talking Stick Resort Arena,"Phoenix, Arizona",18055,1992
+Portland Trail Blazers,Moda Center,"Portland, Oregon",19441,1995
+Sacramento Kings,Golden 1 Center,"Sacramento, California",17583,2016
+San Antonio Spurs,AT&T Center,"San Antonio, Texas",18418,2002
+Toronto Raptors,Scotiabank Arena,"Toronto, Ontario",19800,1999
+Utah Jazz,Vivint Smart Home Arena,"Salt Lake City, Utah",18306,1991
+Washington Wizards,Capital One Arena,"Washington, D.C.",20356,1997
