@@ -25,10 +25,6 @@ app.get('/clubs/:clubname',async(req,res)=>{
 });
 
 app.get('/clubs/clubplayers/:full_name',async(req,res)=>{
-    // const playerid = req.id.full_name; 
-    // NBATeamtable.findById(playerid)
-    // return res.status(200).json(playerid);
-    // });
     console.log(req.params.full_name);  
     const playername = req.params.full_name;  
     const database = client.db('NBA_DB');
