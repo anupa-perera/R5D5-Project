@@ -16,6 +16,16 @@ function Navbar(){
                         Clubs
                     </Link>
                 </li>
+                {/* <li className='navigation-item-left'>
+                    <Link to="/playerpage" className='navigation-link'>
+                        Player
+                    </Link>
+                </li> */}
+                <li className='navigation-item-left'>
+                    <Link to="/playervalueprediction" className='navigation-link'>
+                        Player Value calculation
+                    </Link>
+                </li>
                 <li className='navigation-item-left'>
                     <Link to="/about" className='navigation-link'>
                         About

@@ -98,10 +98,5 @@ h3,p{
     }
   }
   .tile:hover{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .card:hover{
-    background-color: #ccc;
-    transition: background-color 1000ms linear;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
   }

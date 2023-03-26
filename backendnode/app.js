@@ -18,23 +18,11 @@ app.get("/",async(req,res)=>{
 });
 
 app.get('/clubs/:clubname',async(req,res)=>{    
+    console.log(req.params.clubname);
     const database = client.db('NBA_DB');
     const NBATeamtable =  database.collection('NBA_Player_Info');
     const results = await NBATeamtable.find({"team":`${req.params.clubname}`}).toArray();
     res.json({players:results})
-});
-
-app.get('/clubs/clubplayers/:full_name',async(req,res)=>{
-    // const playerid = req.id.full_name; 
-    // NBATeamtable.findById(playerid)
-    // return res.status(200).json(playerid);
-    // });
-    console.log(req.params.full_name);  
-    const playername = req.params.full_name;  
-    const database = client.db('NBA_DB');
-    const NBATeamtable =  database.collection('NBA_Player_Info');
-    const results = await NBATeamtable.find({'full_name':playername});
-    res.status(200).json({playerinfo:results})
 });
 
 
