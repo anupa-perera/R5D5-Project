@@ -1,9 +1,10 @@
 import './ourTeam.css';
 import sasiru from '../../assets/images/sasiru-dp.png';
 import header from '../../assets/images/header.jpg';
-import malith from '../../assets/images/Malith.jpg';
-import anupa from '../../assets/images/Anupa.png';
+import malith from '../../assets/images/malith.jpg';
+import anupa from '../../assets/images/anupa.png';
 import dulara from '../../assets/images/dulara.jpg';
+import mojitha from '../../assets/images/mojitha.webp';
 
 function MeetTheTeam(){
     return (
@@ -54,7 +55,7 @@ function MeetTheTeam(){
                             </p>
                         </div>
                         <div className='member'>
-                            <img src="https://picsum.photos/150/150" alt="Member photo Mojitha" />
+                            <img src={mojitha} alt="Member photo Mojitha" />
                             <h3>Mojitha <br/>Gunaratne</h3>
                             <p>Software Developer
                                 <br/>
