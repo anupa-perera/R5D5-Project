@@ -17,10 +17,9 @@ function Navbar(){
                     </Link>
                 </li>
                 <li className='navigation-item-left'>
-                        <Link to ='https://forms.gle/fHUfNVm4hLCZCcuW6' className='navigation-link' target='_blank'>
-                            Rate Us
-                        </Link>
-
+                    <Link to ='https://forms.gle/fHUfNVm4hLCZCcuW6' className='navigation-link' target='_blank'>
+                        Rate Us
+                    </Link>
                 </li>
                 <li className='navigation-item-left'>
                     <Link to="/about" className='navigation-link'>

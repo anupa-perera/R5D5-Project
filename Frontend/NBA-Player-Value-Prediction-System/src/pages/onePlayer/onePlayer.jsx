@@ -19,8 +19,8 @@ export default function onePlayer({player}) {
     useEffect(() => {
         axios.get(`http://localhost:8080/clubs/clubplayers/${player}`)
           .then((response) => {
-            console.log(response.data);
-            setPlayerInfo(response.data);
+            console.log(response.data.playerinfo);
+            setPlayerInfo(response.data.playerinfo);
           })
           .catch((error) => {
             console.log(error);
@@ -42,63 +42,63 @@ export default function onePlayer({player}) {
         <TableBody>
             <TableRow>
               <TableCell>Rating</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.rating}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Jersey</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.jersey}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Team</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.team}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Position</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.position}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Birthday</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.b_day}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Height</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.height}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Weight</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.weight}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Salary</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.salary}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Country</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.country}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Draft year</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.draft_year}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Draft round</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.draft_round}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Draft peak</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.draft_peak}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>College</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell align="right">{playerInfo.college}</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>TWITTER_FOLLOWER_COUNT_MILLIONS</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell>Twitter followers count in million</TableCell>
+              <TableCell align="right">{playerInfo.TWITTER_FOLLOWER_COUNT_MILLIONS}</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell>Version</TableCell>
-              <TableCell align="right">age</TableCell>
+              <TableCell>Game version</TableCell>
+              <TableCell align="right">{playerInfo.version}</TableCell>
             </TableRow>
         </TableBody>
       </Table>

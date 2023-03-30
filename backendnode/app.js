@@ -24,12 +24,11 @@ app.get('/clubs/:clubname',async(req,res)=>{
     res.json({players:results})
 });
 
-app.get('/clubs/clubplayers/:full_name',async(req,res)=>{
-    console.log(req.params.full_name);  
-    const playername = req.params.full_name;  
+app.get('/clubs/clubplayers/:full_name',async(req,res)=>{ 
+    const playername = req.params.full_name; 
     const database = client.db('NBA_DB');
     const NBATeamtable =  database.collection('NBA_Player_Info');
-    const results = await NBATeamtable.find({'full_name':playername});
+    const results = await NBATeamtable.findOne({'full_name':playername});
     res.status(200).json({playerinfo:results})
 });
 
