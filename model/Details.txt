@@ -1,3 +1,0 @@
-DataPreprocess folder contain pycharm program with 4 python files for data preprocessing.
-Each ML_Model_Dataset folder contain main csv file and devided csv files for training and testing.
-ML_Model_Dataset file at directory are Jupyter notebook source file same code as in files in pycharm project folder.
