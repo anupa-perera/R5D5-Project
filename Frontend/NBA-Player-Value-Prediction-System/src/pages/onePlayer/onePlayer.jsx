@@ -11,6 +11,8 @@ import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
 import { red } from '@mui/material/colors';
 
+//following page is for each player to showcase their attibutes and stats
+
 export default function onePlayer({player}) {
 
 
@@ -70,7 +72,7 @@ export default function onePlayer({player}) {
             </TableRow>
             <TableRow>
               <TableCell>Salary</TableCell>
-              <TableCell align="right">{playerInfo.salary}</TableCell>
+              <TableCell align="right">$ {playerInfo.salary}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Country</TableCell>

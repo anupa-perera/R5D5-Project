@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-import { orange } from '@mui/material/colors';
 
 
 const darkTheme = createTheme({

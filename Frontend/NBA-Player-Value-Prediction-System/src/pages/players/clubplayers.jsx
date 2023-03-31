@@ -9,9 +9,9 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import pageheader from './../../assets/images/playerpage.jpg';
 
-export default function Clubplayers({club,setPlayer}) {
+//following page list players in each club with a button to to see each players attibutes
 
-    
+export default function Clubplayers({club,setPlayer}) {
 
     const [players, setPlayers] = useState([]);
 

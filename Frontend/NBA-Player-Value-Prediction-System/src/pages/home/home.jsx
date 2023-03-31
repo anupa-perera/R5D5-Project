@@ -2,6 +2,8 @@ import './home.css';
 import React from 'react';
 import Mainheader from '../../assets/images/mainpageheader.jpg'
 
+//This is the main home page of the application 
+
 function Home(){
     return (
     <React.Fragment>

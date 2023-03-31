@@ -5,6 +5,8 @@ import malith from '../../assets/images/Malith.jpg';
 import anupa from '../../assets/images/Anupa.png';
 import dulara from '../../assets/images/dulara.jpg';
 
+//following page list the developer team of the project and short discription about technologies used.
+
 function MeetTheTeam(){
     return (
         <div className='root'>

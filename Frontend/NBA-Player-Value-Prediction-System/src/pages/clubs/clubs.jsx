@@ -10,6 +10,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import pageheader from '../../assets/images/clubpage.jpg'
 
+//This page showcase the NBA clubs list them with a button that take user to players in each club.
+
 export default function Club({setClub}){
 
     const [teams, setTeams] = useState([]);
@@ -56,14 +58,5 @@ export default function Club({setClub}){
       </React.Fragment>
     );
 };
-
-
-// {/* {teams ? teams.map(item => ({
-//     <div key={item._id}>
-//     <h2>{item.Team_Name}</h2>
-//     <p>{item.Opening_Year}</p>
-//     </div>
-// }
-// )} */}
 
 

@@ -34,4 +34,4 @@ app.get('/clubs/clubplayers/:full_name',async(req,res)=>{
 
 
 
-app.listen(8080,console.log("Listning to port 8080"));
+app.listen(8080,console.log("Server is running and listning on port 8080"));

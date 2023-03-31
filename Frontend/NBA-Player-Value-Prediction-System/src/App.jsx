@@ -10,7 +10,6 @@ import Clubplayers from './pages/players/clubplayers';
 import OnePlayer from './pages/onePlayer/onePlayer';
 
 function App() {
-  const [count, setCount] = useState(0)
   const [club, setClub] = useState('')
   const [player, setPlayer] = useState('')
 
@@ -20,7 +19,6 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path="/about" element={<Ourteam/>} />
-                {/* <Route path="/playervalueprediction" element={<MyApp/>} /> */}
                 <Route>
                   <Route index path="/clubpage" element={<Clubs  setClub={setClub}/>}/>
                   <Route>
