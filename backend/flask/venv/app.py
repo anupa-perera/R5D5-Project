@@ -25,10 +25,16 @@ def predict():
     # Make predictions
     predictions = model.predict(df)
 
-    print("Predictions: ", predictions)
+    # Denormalize the predictions
+    salary_min = 50000
+    salary_max = 45780966
+    predictions_denorm = int(predictions[0] * (salary_max - salary_min) + salary_min)
+
+
+    print("Predictions: ", predictions_denorm)
 
     # Return the predictions as a JSON object
-    return jsonify({"predictions": predictions.tolist()})
+    return jsonify({"predictions": predictions_denorm})
 
 
 if __name__ == "__main__":
