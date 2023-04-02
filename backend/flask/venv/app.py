@@ -33,8 +33,11 @@ def predict():
 
     print("Predictions: ", predictions_denorm)
 
+    # Format the output with comma separators
+    predictions_formatted = "{:,.0f}".format(predictions_denorm)
+
     # Return the predictions as a JSON object
-    return jsonify({"predictions": predictions_denorm})
+    return jsonify({"predictions": predictions_formatted})
 
 
 if __name__ == "__main__":
