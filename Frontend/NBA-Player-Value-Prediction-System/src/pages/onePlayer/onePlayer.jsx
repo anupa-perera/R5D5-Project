@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -13,13 +14,13 @@ import { red } from '@mui/material/colors';
 
 //following page is for each player to showcase their attibutes and stats
 
-export default function onePlayer({player}) {
-
+export default function onePlayer() {
+    const { playerName } = useParams();
 
   const [playerInfo, setPlayerInfo] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/clubs/clubplayers/${player}`)
+        axios.get(`http://localhost:8080/clubs/clubplayers/${playerName}`)
           .then((response) => {
             console.log(response.data.playerinfo);
             setPlayerInfo(response.data.playerinfo);
@@ -27,18 +28,18 @@ export default function onePlayer({player}) {
           .catch((error) => {
             console.log(error);
           });
-      }, []);
+        }, [playerName]);
 
 
   return (
     <React.Fragment>
-      <div><h3>Player name : {player}</h3></div>
+      <div><h3>Player name : {playerName}</h3></div>
       <TableContainer component={Paper}  align="center" >
       <Table sx={{ maxWidth: 650}} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Full Name</TableCell>
-            <TableCell align="right">{player}</TableCell>
+            <TableCell align="right">{playerName}</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

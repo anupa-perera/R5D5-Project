@@ -46,7 +46,7 @@ export default function Club({setClub}){
                       </Typography>
                     </CardContent>
                     <CardActions>
-                      <Link to="/clubpage/clubplayers" onClick={()=>{setClub(team.TeamName)}}>
+                      <Link to="/clubs/clubplayers" onClick={()=>{setClub(team.TeamName)}}>
                         <Button size="small">Players</Button>
                       </Link>
                     </CardActions>

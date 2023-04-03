@@ -1,8 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import './nav.css';
 
 
 function Navbar(){
+    const [searchText, setSearchText] = useState('');
+    const navigate = useNavigate();
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+        if (searchText.trim() !== '') {
+            navigate(`/clubs/clubplayers/${searchText}`);
+            setSearchText('');
+        }
+    };
+
     return (
         <nav className='nav'>
             <ul className='navigation-menu'>
@@ -12,7 +24,7 @@ function Navbar(){
                     </Link>
                 </li>
                 <li className='navigation-item-left'>
-                    <Link to="/clubpage" className='navigation-link'>
+                    <Link to="/clubs" className='navigation-link'>
                         Clubs
                     </Link>
                 </li>
@@ -27,11 +39,13 @@ function Navbar(){
                     </Link>
                 </li>
                 <li className='navigation-item-right'>
-                    <form className='navigation-search-form'>
+                    <form className='navigation-search-form' onSubmit={handleSearch}>
                         <input
                             type="text"
-                            placeholder="Search..."
+                            placeholder="Search players..."
                             className='navigation-search-input'
+                            value={searchText}
+                            onChange={(e) => setSearchText(e.target.value)}
                         />
                         <button type="submit" className='navigation-search-button'>
                             <i>Search</i>

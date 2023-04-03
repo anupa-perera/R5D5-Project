@@ -20,12 +20,12 @@ function App() {
             <Routes>
                 <Route path="/about" element={<Ourteam/>} />
                 <Route>
-                  <Route index path="/clubpage" element={<Clubs  setClub={setClub}/>}/>
+                  <Route index path="/clubs" element={<Clubs  setClub={setClub}/>}/>
                   <Route>
                     <Route>
-                      <Route index path="/clubpage/clubplayers" element={<Clubplayers club={club} setPlayer={setPlayer}/>}/>
+                      <Route index path="/clubs/clubplayers" element={<Clubplayers club={club} setPlayer={setPlayer}/>}/>
                       <Route>
-                          <Route index path="/clubpage/clubplayers/oneplayer" element={<OnePlayer player={player}/>}/>
+                          <Route path="/clubs/clubplayers/:playerName" element={<OnePlayer />} />
                       </Route>
                     </Route>
                   </Route>
