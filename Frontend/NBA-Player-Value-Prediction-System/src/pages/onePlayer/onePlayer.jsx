@@ -33,7 +33,7 @@ export default function onePlayer() {
 
   return (
     <React.Fragment>
-      <div><h3>Player name : {playerName}</h3></div>
+      <div><h3 className='page-title'>Player name : {playerName}</h3></div>
       <TableContainer component={Paper}  align="center" >
       <Table sx={{ maxWidth: 650}} aria-label="simple table">
         <TableHead>

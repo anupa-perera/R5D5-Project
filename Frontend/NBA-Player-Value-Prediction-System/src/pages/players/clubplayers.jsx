@@ -16,6 +16,17 @@ export default function Clubplayers({club,setPlayer}) {
     const [players, setPlayers] = useState([]);
 
     useEffect(() => {
+      const savedPlayers = localStorage.getItem('players');
+      if (savedPlayers) {
+        setPlayers(JSON.parse(savedPlayers));
+      }
+    }, []);
+ 
+    useEffect(() => {
+      localStorage.setItem('players', JSON.stringify(players));
+    }, [players]);
+
+    useEffect(() => {
         axios.get(`http://localhost:8080/clubs/${club}`)
           .then((response) => {
             console.log(response.data);
@@ -24,8 +35,7 @@ export default function Clubplayers({club,setPlayer}) {
           .catch((error) => {
             console.log(error);
           });
-      }, []);
-
+      }, [club]);
 
 
   return (
@@ -33,7 +43,8 @@ export default function Clubplayers({club,setPlayer}) {
       <div className='header'>
             <img src={pageheader} className='main-header-image'/>
       </div>
-    <h3>List of Players in {club} Club</h3>
+      <h3 className='page-title'> List of Players in {club} Club</h3>
+
 
    <Box sx={{display:'flex',flexWrap:'wrap',justifyContent:'center',gap:'0.5rem'}}>
     {players.map((player) => {
