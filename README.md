@@ -10,8 +10,26 @@ we will also implementing a database to store the data used by the machine learn
 In conclusion,This project will provide valuable insights into the salaries of NBA players and help users understand how different factors impact salary predictions.In general use this application will help to simplify the negotiation process between player agents and club managers to increase the economical gain for both the parties.
 
 <b>Team members:<b/><br/><br/>
-      Y.A.T.Perera (Leader ) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210686/w1867689<br/><br/>
-      K.M.Sasiru Vishmika Perera &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20211267/w1899317<br/><br/>
-      M.S.Gunaratne &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210318/w1867439<br/><br/>
-      D.Dulara Chathuska &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210200/w1912934<br/><br/>
-      D.P.D.A.Malith Alexander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210032/w1867418<br/><br/>
+
+<table>
+  <tr>
+    <td>Y.A.T.Perera (Leader )</td>
+    <td>20210686/w18676892</td>
+  </tr>
+  <tr>
+    <td>K.M.Sasiru Vishmika Perera</td>
+    <td>20211267/w1899317</td>
+  </tr>
+  <tr>
+    <td>D.P.D.A.Malith Alexander</td>
+    <td>20210032/w1867418</td>
+  </tr>
+  <tr>
+    <td>M.S.Gunaratne</td>
+    <td>20210318/w1867439</td>
+  </tr>
+  <tr>
+    <td>D.Dulara Chathuska</td>
+    <td>20210200/w1912934</td>
+  </tr>
+</table>
