@@ -8,6 +8,7 @@ import Ourteam from  './pages/ourTeam/ourTeam';
 import Clubs from './pages/clubs/clubs';
 import Clubplayers from './pages/players/clubplayers';
 import OnePlayer from './pages/onePlayer/onePlayer';
+import Compare from './pages/compare/Compare';
 
 function App() {
   const [club, setClub] = useState('')
@@ -19,6 +20,7 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path="/about" element={<Ourteam/>} />
+                <Route path="/compare/:player1" element={<Compare/>} />
                 <Route>
                   <Route index path="/clubs" element={<Clubs  setClub={setClub}/>}/>
                   <Route>

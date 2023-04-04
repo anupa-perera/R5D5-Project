@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -39,7 +39,7 @@ export default function onePlayer() {
         <TableHead>
           <TableRow>
             <TableCell>Full Name</TableCell>
-            <TableCell align="right">{playerName}</TableCell>
+            <TableCell align="right">{playerInfo.full_name}</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -106,14 +106,23 @@ export default function onePlayer() {
         </TableBody>
       </Table>
     </TableContainer>
-    <div align="center">
-      <Button sx={{ m: '2rem' }} size='medium' variant="contained" color="success" onClick={()=>{alert('wait palyer value been predicted')}} >
-            Calculate Player Value
-       </Button>
-    </div>
+    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <Button sx={{ m: '2rem' }} size='medium' variant="contained" color="success" onClick={()=>{alert('wait palyer value been predicted')}} >
+    Calculate Player Value
+  </Button>
+  <div>
+  <Link to={`/compare/${playerInfo.full_name}`} onClick={() => {setPlayer(player.full_name)}}>
+      <Button variant="outlined" color="primary">
+        Compare with another player
+      </Button>
+    </Link>
+  </div>
+</div>
+
     <div style={{color:red}}align="center">
         <h3>Value Predicted display here</h3>
     </div>
+
   </React.Fragment>
   )
 }
