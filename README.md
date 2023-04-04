@@ -15,3 +15,10 @@ In conclusion,This project will provide valuable insights into the salaries of N
       M.S.Gunaratne &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210318/w1867439<br/><br/>
       D.Dulara Chathuska &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210200/w1912934<br/><br/>
       D.P.D.A.Malith Alexander &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20210032/w1867418<br/><br/>
+
+
+<h3>Main page high-fidelity design</h3>
+![M1](https://raw.githubusercontent.com/username/repo-name/main/images/my_image.png)
+
+<h3>high-fidelity design of prototype application</h3>
+![M2](https://raw.githubusercontent.com/username/repo-name/main/images/my_image.png)
