@@ -35,8 +35,11 @@ In conclusion,This project will provide valuable insights into the salaries of N
 </table>
 
 
+
 <h3>Main page high-fidelity design</h3>
-![M1](https://raw.githubusercontent.com/anupa-perera/R5D5-Project/ReadMe-Config/Mockups/M1.png)
+<img src="https://user-images.githubusercontent.com/56419214/229961466-38231128-dacb-4f12-9d4b-754bd54b4f79.png" alt="M1">
+
 
 <h3>high-fidelity design of prototype web application</h3>
-![M2](https://raw.githubusercontent.com/anupa-perera/R5D5-Project/ReadMe-Config/Mockups/M2.png)
+<img src="https://user-images.githubusercontent.com/56419214/229961869-29394837-af39-4628-ad0a-e617ee1299db.png" alt="M2">
+
