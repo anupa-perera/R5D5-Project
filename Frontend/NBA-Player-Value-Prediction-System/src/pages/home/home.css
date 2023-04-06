@@ -96,7 +96,7 @@ p {
 
 .card:hover {
   background-color: #ccc;
-  transition: background-color 1000ms linear;
+  transition: background-color 600ms linear;
 }
 
 .i-tile {
@@ -133,4 +133,9 @@ p {
   color: white;
   background-color: black;
   padding: '10px' 
+}
+
+.i-tile:hover {
+  background-color: #ccc;
+  transition: background-color 500ms linear;
 }

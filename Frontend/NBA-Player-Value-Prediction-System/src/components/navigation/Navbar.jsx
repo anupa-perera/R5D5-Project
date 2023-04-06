@@ -22,6 +22,8 @@ function SearchForm({ onSubmit, value, onChange }) {
 
 function Navbar() {
     const [searchText, setSearchText] = useState('');
+
+
     const navigate = useNavigate();
 
     const handleSearch = async (e) => {
@@ -34,7 +36,7 @@ function Navbar() {
                     navigate(`/clubs/clubplayers/${data.playerinfo.full_name}`);
                     setSearchText('');
                 } else {
-                    alert('No matching player found in the database. Try Capitalisation');
+                    alert('No player found, Check if the name you entered is correct, Try Capitalisation of first letters on first and last name');
                 }
             } catch (error) {
                 console.error(error);

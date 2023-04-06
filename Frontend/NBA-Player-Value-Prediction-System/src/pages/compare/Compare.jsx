@@ -9,11 +9,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
-import { red } from '@mui/material/colors';
 
 export default function comparePlayers() {
     const [searchText, setSearchText] = useState('');
-    
+
     const handleSearch = async (e) => {
         e.preventDefault();
         if (searchText.trim() !== '') {
@@ -22,8 +21,8 @@ export default function comparePlayers() {
                 if (response.status === 200) {
                     const data = await response.json();
                     setPlayer2Info(data.playerinfo); // set the fetched data to player2Info state
-                } else {
-                    alert('No matching player found in the database. Try Capitalisation');
+                } else if(response.status === 404){
+                    alert('No player found, Check if the name you entered is correct, Try Capitalisation of first letters on first and last name');
                 }
             } catch (error) {
                 console.error(error);
@@ -106,7 +105,7 @@ export default function comparePlayers() {
             <TableRow>
               <TableCell>Salary</TableCell>
               <TableCell align="right">$ {player1Info.salary}</TableCell>
-              <TableCell align="right">$ {player2Info.salary}</TableCell>
+              <TableCell align="right">{'$ '+ player2Info.salary}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Country</TableCell>
@@ -147,8 +146,8 @@ export default function comparePlayers() {
         </Table>
       </TableContainer>
       <form onSubmit={handleSearch}>
-                        <input type="text" value={searchText} onChange={(e) => setSearchText(e.target.value)} />
-                        <button type="submit">Compare to</button>
+                        <input placeholder='See the difference' type="text" value={searchText} onChange={(e) => setSearchText(e.target.value)} style={{width:500,padding:10,margin:20,fontSize:30}}/>
+                        <Button type="submit" sx={{ m: '1rem' }} size='medium' variant="contained" color="success">COMPARE</Button>
                     </form>
       </React.Fragment>
   )

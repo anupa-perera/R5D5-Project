@@ -119,9 +119,7 @@ export default function onePlayer() {
   </div>
 </div>
 
-    <div style={{color:red}}align="center">
-        <h3>Value Predicted display here</h3>
-    </div>
+
 
   </React.Fragment>
   )

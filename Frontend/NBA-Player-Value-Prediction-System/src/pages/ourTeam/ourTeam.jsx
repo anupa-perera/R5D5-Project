@@ -1,5 +1,5 @@
 import './ourTeam.css';
-import sasiru from '../../assets/images/sasiru-dp.png';
+import sasiru from '../../assets/images/Sasiru.jpg';
 import header from '../../assets/images/header.jpg';
 import malith from '../../assets/images/malith.jpg';
 import anupa from '../../assets/images/anupa.png';
