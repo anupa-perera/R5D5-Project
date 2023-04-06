@@ -1,0 +1,73 @@
+import { Button } from "@mui/material";
+import { red } from "@mui/material/colors";
+import React from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+export default function predict({ predictedPlayer }) {
+  const [playerInfomodel, setplayerInfomodel] = useState([]);
+  const [predictedValue, setPredictedValue] = useState("");
+  //console.log(predictedPlayer);
+
+  const handlePredictionClick = () => {
+    fetch(`http://localhost:8080/clubs/predictedClubPlayers/${predictedPlayer}`)
+      .then((responsemodel) => {
+        return responsemodel.json();
+      })
+      .then((data) => {
+        //console.log(data.playerinfomodel);
+        const {
+          rating,
+          draft_year,
+          TWITTER_FOLLOWER_COUNT_MILLIONS,
+          Experience,
+          Age,
+        } = data.playerinfomodel;
+
+        const Data_for_prediction = {
+          rating,
+          draft_year,
+          TWITTER_FOLLOWER_COUNT_MILLIONS,
+          Experience,
+          Age,
+        };
+        console.log(Data_for_prediction);
+
+        axios
+          .post(
+            "https://r5d5veflaskapi.azurewebsites.net/api/HttptrigerV3",
+            JSON.stringify(Data_for_prediction)
+          )
+          .then((result) => {
+            setPredictedValue(result.data);
+
+            console.log(result);
+          });
+      })
+      .catch((error) => {
+        console.log("not allowed!");
+      });
+  };
+  return (
+    <React.Fragment>
+      <div align="center">
+        <Button
+          sx={{ m: "2rem" }}
+          size="medium"
+          variant="contained"
+          color="success"
+          onClick={() => {
+            handlePredictionClick();
+          }}
+        >
+          Calculate Player Value
+        </Button>
+      </div>
+      <div style={{ color: red }} align="center">
+        <h3>the Predicted value display here :{predictedValue}</h3>
+      </div>
+    </React.Fragment>
+  );
+}
+
+

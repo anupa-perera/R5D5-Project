@@ -1,8 +1,50 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
+import { useState } from 'react';
 import './nav.css';
 
+function SearchForm({ onSubmit, value, onChange }) {
+    return (
+        <form className='navigation-search-form' onSubmit={onSubmit}>
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search players..."
+                className='navigation-search-input'
+                value={value}
+                onChange={onChange}
+            />
+            <button type="submit" className='navigation-search-button' aria-label='Submit Search'>
+                <i>Search</i>
+            </button>
+        </form>
+    );
+}
 
-function Navbar(){
+function Navbar() {
+    const [searchText, setSearchText] = useState('');
+
+
+    const navigate = useNavigate();
+
+    const handleSearch = async (e) => {
+        e.preventDefault();
+        if (searchText.trim() !== '') {
+            try {
+                const response = await fetch(`http://localhost:8080/clubs/clubplayers/${searchText}`);
+                if (response.status === 200) {
+                    const data = await response.json();
+                    navigate(`/clubs/clubplayers/${data.playerinfo.full_name}`);
+                    setSearchText('');
+                } else {
+                    alert('No player found, Check if the name you entered is correct, Try Capitalisation of first letters on first and last name');
+                }
+            } catch (error) {
+                console.error(error);
+                alert('An error occurred while searching for the player. Try Capitalisation');
+            }
+        }
+    };
+
     return (
         <nav className='nav'>
             <ul className='navigation-menu'>
@@ -12,12 +54,12 @@ function Navbar(){
                     </Link>
                 </li>
                 <li className='navigation-item-left'>
-                    <Link to="/clubpage" className='navigation-link'>
+                    <NavLink to="/clubs" className='navigation-link'>
                         Clubs
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className='navigation-item-left'>
-                    <Link to ='https://forms.gle/fHUfNVm4hLCZCcuW6' className='navigation-link' target='_blank'>
+                    <Link to='https://forms.gle/fHUfNVm4hLCZCcuW6' className='navigation-link' target='_blank'>
                         Rate Us
                     </Link>
                 </li>
@@ -27,16 +69,7 @@ function Navbar(){
                     </Link>
                 </li>
                 <li className='navigation-item-right'>
-                    <form className='navigation-search-form'>
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            className='navigation-search-input'
-                        />
-                        <button type="submit" className='navigation-search-button'>
-                            <i>Search</i>
-                        </button>
-                    </form>
+                    <SearchForm onSubmit={handleSearch} value={searchText} onChange={(e) => setSearchText(e.target.value)} />
                 </li>
             </ul>
         </nav>

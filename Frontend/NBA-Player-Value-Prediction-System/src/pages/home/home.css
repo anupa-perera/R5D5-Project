@@ -1,0 +1,141 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+.header-text {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.card img {
+  border-radius: 9px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card h3 {
+  color: black;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+p {
+  
+  color: black;
+}
+
+.carousel {
+  width: 70%;
+  /* fits 3 tiles */
+  overflow: hidden;
+  margin: 0 auto;
+  height: 280px;
+  padding-bottom: 2%;
+}
+
+.tiles-wrapper {
+  box-shadow: #cacaca;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 2250px;
+  /* fits 9 tiles */
+  animation: carousel-animation 60s linear infinite;
+}
+
+@keyframes carousel-animation {
+  0% {
+    transform: translateX(0);
+  }
+
+  33.33% {
+    transform: translateX(-750px);
+  }
+
+  66.66% {
+    transform: translateX(-1500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.card:hover {
+  background-color: #ccc;
+  transition: background-color 600ms linear;
+}
+
+.i-tile {
+  flex-basis: 200px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px, 10px;
+  padding-bottom: 10px;
+
+  background-color: white;
+}
+
+.i-image {
+  width: 100%;
+  border-radius: 9px;
+
+}
+
+.tile {
+  font-size: large;
+  text-align: center;
+  color: blue;
+  font-weight: bolder;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: '10px' 
+}
+
+.i-tile:hover {
+  background-color: #ccc;
+  transition: background-color 500ms linear;
+}

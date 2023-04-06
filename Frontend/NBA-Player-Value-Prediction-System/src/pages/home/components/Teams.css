@@ -1,0 +1,25 @@
+
+.carousel {
+    width: 80%;
+    /* fits 3 tiles */
+    overflow: hidden;
+    margin: 0 auto;
+    height: 280px;
+    padding-bottom: 2%;
+  }
+  
+  .tiles-wrapper {
+    box-shadow: #cacaca;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 2250px;
+    /* fits 9 tiles */
+    animation: carousel-animation 60s linear infinite;
+  }
+
+  .i-image {
+    width: 100%;
+    border-radius: 9px;
+  
+  }
