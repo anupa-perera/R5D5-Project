@@ -14,27 +14,26 @@ import { red } from "@mui/material/colors";
 
 //following page is for each player to showcase their attibutes and stats
 
-export default function onePlayer(player, setPredict) {
-  const { playerName } = useParams();
-
+export default function onePlayer({ player, setPredict }) {
+  //const { playerName } = useParams();
   const [playerInfo, setPlayerInfo] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/clubs/clubplayers/${playerName}`)
+      .get(`http://localhost:8080/clubs/clubplayers/${player}`)
       .then((response) => {
-        console.log(response.data.playerinfo);
+        console.log("Player info: " + response.data.playerinfo);
         setPlayerInfo(response.data.playerinfo);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [playerName]);
+  }, []);
 
   return (
     <React.Fragment>
       <div>
-        <h3 className="page-title">Player name : {playerName}</h3>
+        <h3 className="page-title">Player name : {player}</h3>
       </div>
       <TableContainer component={Paper} align="center">
         <Table sx={{ maxWidth: 650 }} aria-label="simple table">
@@ -119,6 +118,18 @@ export default function onePlayer(player, setPredict) {
       >
         <div>
           <Link
+            to={`/compare/${playerInfo.full_name}`}
+            onClick={() => {
+              //setPlayer(player.full_name);
+            }}
+          >
+            <Button variant="outlined" color="primary">
+              Compare with another player
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <Link
             to="/clubpage/clubplayers/onePlayer/predict"
             onClick={() => {
               setPredict(playerInfo.full_name);
@@ -130,20 +141,7 @@ export default function onePlayer(player, setPredict) {
               variant="contained"
               color="success"
             >
-              View Prediction for Salary
-            </Button>
-          </Link>
-        </div>
-
-        <div>
-          <Link
-            to={`/compare/${playerInfo.full_name}`}
-            onClick={() => {
-              setPlayer(player.full_name);
-            }}
-          >
-            <Button variant="outlined" color="primary">
-              Compare with another player
+              View Player Prediction
             </Button>
           </Link>
         </div>

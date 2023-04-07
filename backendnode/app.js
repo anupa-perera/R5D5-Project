@@ -4,11 +4,13 @@ const mongodb = require("mongodb");
 const cors = require("cors");
 app.use(cors());
 app.use(express.json());
+const axios = require("axios");
 
 const url = "mongodb+srv://r5d5:OGCwYLw0gu3BDvLk@nbadb.xxuctxp.mongodb.net";
 
 const client = new mongodb.MongoClient(url);
 client.connect();
+let database;
 
 app.get("/", async (req, res) => {
   const database = client.db("NBA_DB");
@@ -53,7 +55,7 @@ app.get("/clubs/predictedClubPlayers/:full_name", async (req, res) => {
     res.status(500).json({ message: "Internal server error" });
   }
 });
-const axios = require("axios");
+
 let data = JSON.stringify({
   text: "request.json",
 });
