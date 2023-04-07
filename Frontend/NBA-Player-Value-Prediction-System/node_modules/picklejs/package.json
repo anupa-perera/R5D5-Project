@@ -1,0 +1,14 @@
+{
+  "name": "picklejs",
+  "version": "0.0.0",
+  "description": "JSON-based Javascript serializer.",
+  "main": "pickle.js",
+  "scripts": {
+    "test": "testem ci"
+  },
+  "keywords": [
+    "serialize"
+  ],
+  "author": "Toby Ho",
+  "license": "MIT"
+}
