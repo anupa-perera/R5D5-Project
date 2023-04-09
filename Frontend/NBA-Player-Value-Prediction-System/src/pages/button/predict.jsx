@@ -29,7 +29,13 @@ export default function predict({ predictedPlayer }) {
           Age,
         } = data.playerinfomodel;
 
-        console.log(rating);
+        console.log(
+          rating,
+          draft_year,
+          TWITTER_FOLLOWER_COUNT_MILLIONS,
+          Experience,
+          Age
+        );
 
         const Data_for_prediction = {
           rating,
