@@ -15,25 +15,25 @@ import { red } from "@mui/material/colors";
 //following page is for each player to showcase their attibutes and stats
 
 export default function onePlayer({ player, setPredict }) {
-  //const { playerName } = useParams();
+  const { playerName } = useParams();
   const [playerInfo, setPlayerInfo] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/clubs/clubplayers/${player}`)
+      .get(`http://localhost:8080/clubs/clubplayers/${playerName}`)
       .then((response) => {
-        console.log("Player info: " + response.data.playerinfo);
+        //console.log("Player info: " + response.data.playerinfo);
         setPlayerInfo(response.data.playerinfo);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [playerName]);
 
   return (
     <React.Fragment>
       <div>
-        <h3 className="page-title">Player name : {player}</h3>
+        <h3 className="page-title">Player name : {playerName}</h3>
       </div>
       <TableContainer component={Paper} align="center">
         <Table sx={{ maxWidth: 650 }} aria-label="simple table">

@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { lightGreen, red } from "@mui/material/colors";
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -29,13 +29,7 @@ export default function predict({ predictedPlayer }) {
           Age,
         } = data.playerinfomodel;
 
-        console.log(
-          rating,
-          draft_year,
-          TWITTER_FOLLOWER_COUNT_MILLIONS,
-          Experience,
-          Age
-        );
+        console.log(rating);
 
         const Data_for_prediction = {
           rating,
