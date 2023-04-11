@@ -1,47 +1,49 @@
-import React from 'react'
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
-import { Button } from '@mui/material';
-import { red } from '@mui/material/colors';
+import React from "react";
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import axios from "axios";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableContainer from "@mui/material/TableContainer";
+import TableHead from "@mui/material/TableHead";
+import TableRow from "@mui/material/TableRow";
+import Paper from "@mui/material/Paper";
+import { Button } from "@mui/material";
+import { red } from "@mui/material/colors";
 
 //following page is for each player to showcase their attibutes and stats
 
-export default function onePlayer({player}) {
-
-
+export default function onePlayer({ player, setPredict }) {
+  const { playerName } = useParams();
   const [playerInfo, setPlayerInfo] = useState([]);
 
-    useEffect(() => {
-        axios.get(`http://localhost:8080/clubs/clubplayers/${player}`)
-          .then((response) => {
-            console.log(response.data.playerinfo);
-            setPlayerInfo(response.data.playerinfo);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }, []);
-
+  useEffect(() => {
+    axios
+      .get(`http://localhost:8080/clubs/clubplayers/${playerName}`)
+      .then((response) => {
+        //console.log("Player info: " + response.data.playerinfo);
+        setPlayerInfo(response.data.playerinfo);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [playerName]);
 
   return (
     <React.Fragment>
-      <div><h3>Player name : {player}</h3></div>
-      <TableContainer component={Paper}  align="center" >
-      <Table sx={{ maxWidth: 650}} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Full Name</TableCell>
-            <TableCell align="right">{player}</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
+      <div>
+        <h3 className="page-title">Player name : {playerName}</h3>
+      </div>
+      <TableContainer component={Paper} align="center">
+        <Table sx={{ maxWidth: 650 }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Full Name</TableCell>
+              <TableCell align="right">{playerInfo.full_name}</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
             <TableRow>
               <TableCell>Rating</TableCell>
               <TableCell align="right">{playerInfo.rating}</TableCell>
@@ -96,23 +98,54 @@ export default function onePlayer({player}) {
             </TableRow>
             <TableRow>
               <TableCell>Twitter followers count in million</TableCell>
-              <TableCell align="right">{playerInfo.TWITTER_FOLLOWER_COUNT_MILLIONS}</TableCell>
+              <TableCell align="right">
+                {playerInfo.TWITTER_FOLLOWER_COUNT_MILLIONS}
+              </TableCell>
             </TableRow>
             <TableRow>
               <TableCell>Game version</TableCell>
               <TableCell align="right">{playerInfo.version}</TableCell>
             </TableRow>
-        </TableBody>
-      </Table>
-    </TableContainer>
-    <div align="center">
-      <Button sx={{ m: '2rem' }} size='medium' variant="contained" color="success" onClick={()=>{alert('wait palyer value been predicted')}} >
-            Calculate Player Value
-       </Button>
-    </div>
-    <div style={{color:red}}align="center">
-        <h3>Value Predicted display here</h3>
-    </div>
-  </React.Fragment>
-  )
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          <Link
+            to={`/compare/${playerInfo.full_name}`}
+            onClick={() => {
+              //setPlayer(player.full_name);
+            }}
+          >
+            <Button variant="outlined" color="primary">
+              Compare with another player
+            </Button>
+          </Link>
+        </div>
+        <div>
+          <Link
+            to="/clubpage/clubplayers/onePlayer/predict"
+            onClick={() => {
+              setPredict(playerInfo.full_name);
+            }}
+          >
+            <Button
+              sx={{ m: "2rem" }}
+              size="medium"
+              variant="contained"
+              color="success"
+            >
+              View Player Prediction
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 }
