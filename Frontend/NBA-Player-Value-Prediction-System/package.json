@@ -7,11 +7,11 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.13",
-    "axios": "^0.24.0",
+    "axios": "^1.11.0",
     "cors": "^2.8.5",
     "flask": "^0.2.10",
     "mongoose": "^7.0.3",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.1.10",
     "picklejs": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
+    "@vitejs/plugin-react": "^5.0.2",
     "http-proxy-middleware": "^2.0.6",
-    "vite": "^4.2.1"
+    "vite": "^7.1.4"
   }
 }
